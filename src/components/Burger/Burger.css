@@ -1,3 +1,10 @@
+.blockBurger {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 700px;
+}
 .Burger {
   width: 100%;
   margin: auto;
@@ -122,7 +129,9 @@
   margin: 2% auto;
 }
 
-
+.priceBurger {
+  color: #1ADF45;
+}
 
 @media (min-width: 1000px) and (min-height: 700px) {
   .Burger {

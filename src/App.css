@@ -2,41 +2,121 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background: white;
+  height: 700px;
+  width: 1000px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 4px 4px 53px 0 rgba(34, 60, 80, 0.55);
+  -moz-box-shadow: 4px 4px 53px 0 rgba(34, 60, 80, 0.55);
+  box-shadow: 4px 4px 53px 0 rgba(34, 60, 80, 0.55);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_blockMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+
+  -webkit-box-shadow: -6px 2px 5px -5px rgba(87, 232, 17, 0.6) inset;
+  -moz-box-shadow: -6px 2px 5px -5px rgba(87, 232, 17, 0.6) inset;
+  box-shadow: -6px 2px 5px -5px rgba(87, 232, 17, 0.6) inset;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.blockButtons {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  -webkit-box-shadow: 0 -5px 5px -5px rgba(87, 232, 17, 0.6) inset;
+  -moz-box-shadow: 0 -5px 5px -5px rgba(87, 232, 17, 0.6) inset;
+  box-shadow: 0 -5px 5px -5px rgba(87, 232, 17, 0.6) inset;
 }
 
-.card {
-  padding: 2em;
+.quantityIngredients {
+  font-size: 20px;
+  color: #1ADF45;
 }
 
-.read-the-docs {
-  color: #888;
+.hiddenButtonMenuReduce {
+  display: none;
+}
+
+.ButtonMenuReduce {
+  width: 40px;
+  height: 40px;
+  margin-left: 30%;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 8px;
+
+  background-image:  url("assets/bucket.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.ButtonMenuReduce:hover {
+  -webkit-box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+  -moz-box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+  box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+}
+
+.buttonMenuIncrease {
+  width: 80px;
+  height: 80px;
+  margin-right: 20%;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.buttonMenuIncrease:hover {
+  -webkit-box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+  -moz-box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+  box-shadow: 0 2px 22px 0 rgba(87, 232, 17, 0.72);
+}
+
+.buttonMenuIncrease:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.saladImage {
+  background-image: url("assets/salad.png");
+}
+
+.baconImage {
+  background-image: url("assets/bacon.png");
+}
+
+.cheeseImage {
+  background-image: url("assets/cheese.png");
+}
+
+.meatImage {
+  background-image: url("assets/meat.png");
 }
